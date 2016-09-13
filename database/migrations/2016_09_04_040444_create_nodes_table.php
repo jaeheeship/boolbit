@@ -18,6 +18,7 @@ class CreateNodesTable extends Migration
             $table->string('name') ;
             $table->string('description') ;
             $table->integer('user_id') ; 
+            $table->integer('group_id') ; 
             $table->string('ip') ; 
             $table->string('node_type') ; 
         });
