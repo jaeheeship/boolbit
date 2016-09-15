@@ -13,8 +13,13 @@ class CreatePublickeysTable extends Migration
      */
     public function up()
     {
-        Schema::table('public_keys', function (Blueprint $table) {
-            //
+        Schema::create('public_keys', function (Blueprint $table) {
+            $table->increments('id') ;
+            $table->text('key') ;
+            $table->integer('node_id') ;
+            $table->integer('user_id') ; 
+            $table->string('ip') ; 
+
         });
     }
 
@@ -25,8 +30,6 @@ class CreatePublickeysTable extends Migration
      */
     public function down()
     {
-        Schema::table('public_keys', function (Blueprint $table) {
-            //
-        });
+        Schema::drop('public_keys') ;
     }
 }
