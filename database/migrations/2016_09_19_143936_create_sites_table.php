@@ -13,8 +13,10 @@ class CreateSitesTable extends Migration
      */
     public function up()
     {
-        Schema::table('sites', function (Blueprint $table) {
-            //
+        Schema::create('sites', function (Blueprint $table) { 
+		$table->string('site_name') ;
+		$table->string('domain') ;
+		$table->string('public_path') ;
         });
     }
 
@@ -25,8 +27,6 @@ class CreateSitesTable extends Migration
      */
     public function down()
     {
-        Schema::table('sites', function (Blueprint $table) {
-            //
-        });
+        Schema::drop('sites');
     }
 }
