@@ -3,6 +3,8 @@ This tool provide function to manage your servers and monitor apps.
 
 ### Feature
 * a way to manage your instance 
+* Flow your development without consideration of deploy
+* Become proactive monitor
 
 ### Goals
 
