@@ -8,6 +8,7 @@ This tool provide function to manage your servers and monitor apps.
 
 ### Goals
 
+We help you to build a app effectively.
 Most of us spend a lot of time to setup our machine in order to develop web application.  
 
 So We will provide a util covering from install to monitoring.
@@ -17,3 +18,4 @@ So We will provide a util covering from install to monitoring.
 
 * based on Laravel.  
 * latest php > 5.6
+
