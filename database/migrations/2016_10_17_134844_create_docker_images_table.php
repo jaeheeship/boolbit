@@ -16,6 +16,7 @@ class CreateDockerImagesTable extends Migration
         Schema::create('docker_images', function (Blueprint $table) { 
             $table->integer('user_id') ; 
             $table->string('image_name') ;
+            $table->text('body') ;
             $table->string('namespace')->unique() ;
             $table->string('description') ;
             $table->timestamps() ;
