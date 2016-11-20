@@ -4193,4 +4193,87 @@ a.panel-block:hover {
       .footer a:not(.icon):hover, .footer a:visited:not(.icon):hover {
         border-bottom-color: #00d1b2; }
 
+.section {
+  background-color: transparent; }
+
+.box.is-grey {
+  background-color: #7a7a7a; }
+
+.box .box-header {
+  padding: 10px; }
+  .box .box-header .title {
+    display: inline-block;
+    font-size: 1.2em;
+    color: #FFF;
+    font-weight: bold; }
+
+.box .box-body {
+  padding: 0px 10px 10px 10px; }
+  .box .box-body .box:not(:last-child) {
+    margin-bottom: 10px; }
+
+.tcenter {
+  text-align: center !important; }
+
+.tright {
+  text-align: right !important; }
+
+.tleft {
+  text-align: left !important; }
+
+.no-padding {
+  padding: 0px !important; }
+
+.button.block {
+  width: 100% !important;
+  height: 45px !important; }
+
+.todo-box {
+  padding: 0px; }
+  .todo-box .title {
+    font-size: 1.1em;
+    padding-left: 10px;
+    padding-top: 10px; }
+  .todo-box ul.todo-list li.todo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px dashed #ff708d; }
+    .todo-box ul.todo-list li.todo:first {
+      padding-top: 0px; }
+    .todo-box ul.todo-list li.todo.complete {
+      text-decoration: line-through;
+      color: #ddd; }
+  .todo-box footer.card-footer {
+    background: #3273dc; }
+    .todo-box footer.card-footer a.card-footer-item.cancel {
+      border-right-width: 0px; }
+    .todo-box footer.card-footer a.card-footer-item.create {
+      color: #fff; }
+  .todo-box .todo-card input[type=text] {
+    font-size: 14px;
+    border-radius: 0px;
+    display: inline-block;
+    width: 100%;
+    padding: 14px 0px 14px;
+    padding-left: 37px;
+    border: 0px; }
+  .todo-box .todo-card .icon {
+    position: absolute;
+    top: 13px;
+    left: 10px; }
+
+.form input[type=text] {
+  padding: 7px 10px;
+  font-size: 16px;
+  margin-top: 0px;
+  border: 0px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #000; }
+
+a.cancel {
+  background-color: #f2f2f2;
+  color: #848484; }
+
 /*# sourceMappingURL=app.css.map */

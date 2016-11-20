@@ -10,14 +10,18 @@
     "gulp": "^3.9.1",
     "jquery": "^3.1.0",
     "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-stylus": "^2.0.3",
     "laravel-elixir-vue-2": "^0.2.0",
     "laravel-elixir-webpack-official": "^1.0.2",
     "lodash": "^4.16.2",
+    "stylus-loader": "^2.3.1",
     "vue": "^2.0.1",
-    "vue-resource": "^1.0.3"
+    "vue-flatpickr": "^2.0.3",
+    "vue-resource": "^1.0.3",
+    "vuex": "^2.0.0"
   },
   "dependencies": {
-    "bulma": "^0.2.3",
-    "gulp": "^3.9.1"
+    "node-uuid": "^1.4.7",
+    "uuid": "^2.0.3"
   }
 }
