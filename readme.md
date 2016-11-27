@@ -8,8 +8,7 @@ How can we build a infra for small business.
 Is Answer an microservice. 
 
 There are already good tools like packer.io, ansible, terraform.
-
-This Project is based on it. 
+We believe that these tools will give many developers to focus on develop their software. 
 
 We provide
 * basic monitoring
