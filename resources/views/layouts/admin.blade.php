@@ -39,7 +39,7 @@
                 <a href="#" class="item active">List</span></a>
             </li>
             <li>
-                <a href="#" class="item active">Add Template</span></a>
+                <a href="#" class="item active">+&nbsp;Add Template</span></a>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@
                 <a href="#" class="item active">List</span></a>
             </li>
             <li>
-                <a href="#" class="item active">Add Project</span></a>
+                <a href="#" class="item active">+&nbsp;Add Project</span></a>
             </li>
           </ul>
         </div>

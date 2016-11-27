@@ -4317,11 +4317,13 @@ body {
       font-size: 15px;
       margin-bottom: 0px; }
       .aside .sidebar-section .title .icon {
-        line-height: 12px; }
+        font-size: 15px;
+        margin-right: 5px;
+        line-height: 15px; }
     .aside .sidebar-section a {
       color: #000; }
     .aside .sidebar-section .sub-nav {
-      padding-left: 25px; }
+      padding-left: 30px; }
       .aside .sidebar-section .sub-nav li a {
         display: block;
         padding-top: 10px;

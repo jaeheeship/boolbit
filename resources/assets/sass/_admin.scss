@@ -48,7 +48,9 @@ body {
             font-size:15px;
             margin-bottom:0px;
             .icon {
-	            line-height: 12px;
+                font-size: 15px;
+                margin-right: 5px;
+                line-height: 15px;
             }
         }
 
@@ -57,7 +59,7 @@ body {
         }
         
         .sub-nav {
-            padding-left:25px;
+            padding-left:30px;
             li a {
                 display:block;
                 padding-top:10px;
