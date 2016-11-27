@@ -1,21 +1,24 @@
 # Boolbit Application
+This Project is for saving extra time to build application in platform like aws,digital ocean, azure ,etc.
+
+We want to stack good experience for bulding infrastructure. 
+There are already good tools like packer.io, ansible, terraform.
+
+This Project is based on it. 
+
+We provide
+* basic monitoring
+    * you can extend it
+* an easily way to build servers
+* a way to manage image . 
+
+Our goal is to hard to reach it in short time.
+So, We'll take into small steps.
+
+### How to use.
+* 
+
+###  
 This tool provide function to manage your servers and monitor apps.  
 
-### Feature
-* a way to manage your instance 
-* Flow your development without consideration of deploy
-* Become proactive monitor
-
-### Goals
-
-We help you to build a app effectively.
-Most of us spend a lot of time to setup our machine in order to develop web application.  
-
-So We will provide a util covering from install to monitoring.
-* We want to allow you to save your time in order to build your machine for development. 
-
-### env
-
-* based on Laravel.  
-* latest php > 5.6
-*
+### Application Architecture

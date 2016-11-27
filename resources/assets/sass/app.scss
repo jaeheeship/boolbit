@@ -1,9 +1,10 @@
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 // Variables
-//@import "variables";
+@import "variables";
 
 // Bootstrap
 @import "node_modules/bulma/bulma";
@@ -13,3 +14,4 @@
 @import 'todo_box' ;
 @import 'form' ;
 @import 'button' ;
+@import 'admin' ;
