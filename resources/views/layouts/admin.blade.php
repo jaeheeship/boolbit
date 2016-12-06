@@ -22,12 +22,13 @@
     </script>
 </head>
 <body>
+<div id="app">
   <div class="columns">
     <aside class="column is-2 aside hero is-fullheight is-hidden-mobile">
       
       <div>
         <div class="brand">
-            <a>Boolbit</a>
+            <a><img src="/img/boolbit_logo.png" /></a>
         </div>
         <div class="sidebar-section">
           <div class="title"><a><span class="icon"><i class="fa fa-tachometer"></i></span>Dashboard</a></div>
@@ -54,14 +55,23 @@
             </li>
           </ul>
         </div>
+        <div class="sidebar-section">
+          <div class="title"><span class="icon"><i class="fa fa-cog"></i></span>Configuration</div>
+        </div>
       </div>
     </aside>
     <div class="column is-10 admin-panel">
-      <nav class="nav has-shadow" id="top">
+      <nav class="nav has-shadow is-blue" id="top">
         <div class="container">
           <div class="nav-left">
             <a class="nav-item" href="../index.html">
-                Boolbit
+                Templates
+            </a>
+            <a class="nav-item" href="../index.html">
+                &gt;
+            </a>
+            <a class="nav-item" href="../index.html">
+                Sprintodo
             </a>
           </div>
           <span class="nav-toggle">
@@ -85,24 +95,30 @@
           </div>
         </div>
       </nav>
+      <div>
+        <div class="container">
+            @yield('content')
+        </div>
+      
+      </div>
     </div>
     </div>
 <footer class="footer">
   <div class="container">
     <div class="has-text-centered">
       <p>
-        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+        <strong>Boolbit</strong> by <a href="http://jgthms.com">Jaehee</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. 
       </p>
       <p>
-        <a class="icon" href="https://github.com/jgthms/bulma">
+        <a class="icon" href="https://github.com/jaeheeship/boolbit">
           <i class="fa fa-github"></i>
         </a>
       </p>
     </div>
   </div>
 </footer>
-
+</div>
+<script src="/js/app.js"></script>
 </body>
 </html>

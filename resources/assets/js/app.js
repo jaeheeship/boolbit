@@ -14,7 +14,9 @@ require('./bootstrap');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('template-create-form', require('./components/TemplateCreateForm.vue'));
+//const TemplateCreateForm = require('./components/TemplateCreateForm.vue') ;
 
 const app = new Vue({
-    el: 'body'
+    el: '#app'
 });

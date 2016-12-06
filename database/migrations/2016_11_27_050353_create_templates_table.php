@@ -15,11 +15,15 @@ class CreateTemplatesTable extends Migration
     {
         Schema::create('templates', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('source_url');
-            $table->string('source_type');
+            $table->uuid('uuid')->unique() ;
+            $table->string('repository_url');
+            $table->string('repository_type');
             $table->string('title');
             $table->string('description');
-            
+            $table->string("version");
+            $table->uuid('commit_id')->unique();
+
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

@@ -26,7 +26,7 @@
 </head>
 <body> 
 <div id="app">
-    <nav class="nav has-shadow" id="top">
+    <nav class="nav has-shadow " id="top">
             
             <span class="nav-toggle">
                 <span></span>

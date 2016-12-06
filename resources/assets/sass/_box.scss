@@ -22,3 +22,17 @@
     }
 
 }
+
+.box-panel {
+    padding:0px;
+    
+    .panel-title {
+        background: #787e8c;
+        padding: 15px 10px;
+        color: #fff;
+    }    
+
+    .panel-body {
+        padding:20px; 
+    }
+}

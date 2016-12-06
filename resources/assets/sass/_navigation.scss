@@ -1,0 +1,15 @@
+.nav {
+    &.is-blue {
+        background-color:$blue;
+        a {
+            color:#fff;
+        }
+    }
+
+    &.is-blue-black {
+        background-color:$blue-black;
+        a {
+            color:#fff;
+        }
+    }
+}

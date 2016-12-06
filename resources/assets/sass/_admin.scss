@@ -31,11 +31,15 @@ body {
         a {
             display: block;
             font-size: 21px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             border-bottom: 1px solid #eee;
             text-align: center;
             color: #268bd2;
+
+            img {
+                height:32px;
+            }
         }
     }
 
@@ -68,6 +72,11 @@ body {
         }
     }
 }
+
+.admin-panel {
+    padding-right:0px;
+}
+
 
 /*
 .aside {
