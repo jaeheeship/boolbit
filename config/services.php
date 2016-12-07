@@ -34,5 +34,11 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-
+    'aws' => [
+        'apikey' => env('AWS_APIKEY'),
+        'secret' => env('AWS_SECRET'),
+    ],
+    'digitalocean' => [
+        'apikey' => env('DIGITALOCEAN_APIKEY')
+    ]
 ];

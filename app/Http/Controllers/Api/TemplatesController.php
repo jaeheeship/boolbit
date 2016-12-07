@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Template ;
+use Ramsey\Uuid\Uuid;
+use SebastianBergmann\Git\Git ;
 
 class TemplatesController extends Controller
 {
@@ -35,7 +38,16 @@ class TemplatesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $reqData = $request->all() ;
+        $uuid4 = Uuid::uuid4() ;
+    
+        $additionalData = ['user_id' => auth()->user()->getKey(),
+                            'uuid' => $uuid4->toString()] ; 
+        
+        Template::create(
+            array_merge($request->only('repository_url','title','description'), $additionalData)
+            ) ;
+
     }
 
     /**
