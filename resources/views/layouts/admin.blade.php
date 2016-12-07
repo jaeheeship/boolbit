@@ -34,13 +34,13 @@
           <div class="title"><a><span class="icon"><i class="fa fa-tachometer"></i></span>Dashboard</a></div>
         </div>
         <div class="sidebar-section">
-          <div class="title"><span class="icon"><i class="fa fa-file-text-o"></i></span>Templates</div>
+          <div class="title"><span class="icon"><i class="fa fa-file-text-o"></i></span>Images</div>
           <ul class="sub-nav">
             <li>
                 <a href="#" class="item active">List</span></a>
             </li>
             <li>
-                <a href="#" class="item active">+&nbsp;Add Template</span></a>
+                <a href="#" class="item active">+&nbsp;Add Image</span></a>
             </li>
           </ul>
         </div>

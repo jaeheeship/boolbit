@@ -37,6 +37,8 @@ Route::get('/gittest', function () {
 });
 
 Auth::routes();
-
+    
 Route::get('/home', 'HomeController@index');
+Route::get('/templates/create', 'TemplatesController@create')->name('templates.create');
+Route::post('/templates/store', 'TemplatesController@store')->name('templates.store');
 Route::get('/templates', 'TemplatesController@index');

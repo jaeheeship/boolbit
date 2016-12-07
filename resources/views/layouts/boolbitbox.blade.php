@@ -38,10 +38,10 @@
             <span></span>
           </span>
           <div class="nav-right nav-menu ">
-            <a href="#" class="nav-item is-active">
+            <a href="/templates" class="nav-item is-active">
               Browse
             </a>
-            <a href="#" class="nav-item">
+            <a href="/templates/create" class="nav-item">
               Submit
             </a>
           </div>

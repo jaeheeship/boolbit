@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\CreateTemplateRequest ;
 use App\Http\Controllers\Controller;
 use App\Models\Template ;
 use Ramsey\Uuid\Uuid;
@@ -36,7 +37,7 @@ class TemplatesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateTemplateRequest $request)
     {
         $reqData = $request->all() ;
         $uuid4 = Uuid::uuid4() ;

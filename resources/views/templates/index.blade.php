@@ -24,7 +24,19 @@
 <br/>
 <div class="container">
 
-<template-create-form></template-create-form>
+<table class="table">
+    <tbody>
+        @foreach($templates as $template)
+        <tr>
+            <td style="padding:10px 20px;">
+                <a style="font-size:1.5em;display:inline-block;margin-bottom:10px;" >{{$template->title}}</a> <br/>
+                {{$template->description}} <br/>
+                <a href="{{$template->source_url}}" style="color:#333;" target="_blank">{{$template->source_url}} </a><br/>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
 
 </div>
 @stop
