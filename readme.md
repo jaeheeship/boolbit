@@ -2,6 +2,7 @@
 This Project is for saving extra time to build application in platform like aws,digital ocean, azure ,etc.
 
 We want to share good experience for bulding infrastructure.
+
 For instance,
 What is a good way to build a infrastructre for service like sns. 
 How can we build a infra for small business.
@@ -9,6 +10,10 @@ Is Answer an microservice.
 
 There are already good tools like packer.io, ansible, terraform.
 We believe that these tools will give many developers to focus on develop their software. 
+
+Stack our experience
+Save our time. 
+
 
 We provide
 * basic monitoring

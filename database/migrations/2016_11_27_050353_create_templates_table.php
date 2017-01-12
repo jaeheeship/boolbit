@@ -16,7 +16,7 @@ class CreateTemplatesTable extends Migration
         Schema::create('templates', function (Blueprint $table) {
             $table->increments('id');
             $table->uuid('uuid')->unique() ;
-            $table->string('repository_url');
+            $table->string('source_urlx`');
             $table->string('repository_type');
             $table->string('title');
             $table->string('description');
