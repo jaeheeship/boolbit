@@ -1,18 +1,9 @@
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 // Variables
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bulma/bulma";
-@import 'section' ;
-@import 'box' ;
-@import 'common' ;
-@import 'todo_box' ;
-@import 'form' ;
-@import 'button' ;
-@import 'navigation' ;
-@import 'admin' ;
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
