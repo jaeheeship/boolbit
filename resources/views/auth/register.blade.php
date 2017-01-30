@@ -10,45 +10,19 @@
                         Register an Account
                     </h1>
 
-                    @if($errors->has('name'))
-                    <div class="notification is-danger">
-                        {{$errors->first('name')}}
-                    </div>
-                    @endif 
-
-                    @if($errors->has('email'))
-                    <div class="notification is-danger">
-                        {{$errors->first('email')}}
-                    </div>
-                    @endif
-
-                    @if($errors->has('password'))
-                    <div class="notification is-danger">
-                        {{$errors->first('password')}}
-                    </div>
-                    @endif
-
-                    @if($errors->has('password_confirmation'))
-                    <div class="notification is-danger">
-                        {{$errors->first('password_confirmation')}}
-                    </div>
-                    @endif
-
-
-
                     <div class="box">
 
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    <div class="form-horizontal" >
                         {{ csrf_field() }}
 
                         <label class="label">Username</label>
                         <p class="control">
-                            <input class="input" id="username" name="name" type="text" value="{{ old('name') }}" required>
+                            <input class="input" id="username" name="name" type="text"  required>
                         </p> 
 
                         <label class="label">Email</label>
                         <p class="control">
-                            <input class="input" id="email" name="email" type="text" value="{{ old('email') }}" required>
+                            <input class="input" id="email" name="email" type="text"  required>
                         </p> 
 
                         <label class="label">Password</label>
@@ -62,13 +36,13 @@
                         </p> 
                         <hr/>
                         <p class="control">
-                            <button class="button is-primary">Register</button>
+                            <button class="button is-primary" id="btn-register" >Register</button>
                             <button class="button is-default">Cancel</button>
                         </p>
-                    </form>
+                    </div>
                     </div>
                     <p class="has-text-centered">
-                        <a href="{{route('login')}}">Login</a>
+                        <a href="/login">Login</a>
                         |
                         <a href="#">Need help?</a>
                     </p>
@@ -78,4 +52,33 @@
     </div>
 </section>
 
+@endsection
+
+@section('scripts')
+@parent
+<script>
+(function(){
+    const txtEmail = document.getElementById('email');
+    const txtUsername = document.getElementById('username');
+    const txtPassword = document.getElementById('password') ; 
+
+    const btnRegister = document.getElementById('btn-register') ;
+
+    btnRegister.addEventListener('click', function(e){
+        const email = txtEmail.value ; 
+        const password = txtPassword.value ; 
+
+        const promise = firebase.auth().createUserWithEmailAndPassword(email,password) ; 
+
+        promise.then( user => {
+            console.log(user) ;
+            user.sendEmailVerification();
+        }).catch(e => {
+            console.log(e.message) ; 
+        })
+
+    });
+
+}());
+</script>
 @endsection

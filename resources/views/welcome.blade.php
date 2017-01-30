@@ -63,6 +63,18 @@
                 margin-bottom: 30px;
             }
         </style>
+        <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCxp6vA7eTLr-OJbBsc1Bs5OaCOz995Ppk",
+            authDomain: "boolbit-81a75.firebaseapp.com",
+            databaseURL: "https://boolbit-81a75.firebaseio.com",
+            storageBucket: "boolbit-81a75.appspot.com",
+            messagingSenderId: "256589869214"
+        };
+        firebase.initializeApp(config);
+        </script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">

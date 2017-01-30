@@ -17,12 +17,25 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "{{env('FIREBASE_APIKEY')}}",
+        authDomain: "{{env('FIREBASE_AUTHDOMAIN')}}",
+        databaseURL: "{{env('FIREBASE_DATABASEURL')}}",
+        storageBucket: "{{env('FIREBASE_STORAGEBUCKET')}}",
+        messagingSenderId: "{{env('FIREBASE_MESSAGINGSENDERID')}}"
+    };
 
-    <script src="https://use.fontawesome.com/babb4a3f7c.js"></script>
+    firebase.initializeApp(config);
+    </script>
+
 </head>
 <body>
 
     @yield('content')
-  
+    @section('scripts')
+    @show
 </body>
 </html>

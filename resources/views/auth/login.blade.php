@@ -8,7 +8,7 @@
         <div class="columns is-vcentered">
           <div class="column is-4 is-offset-4">
 
-            <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
+            <div class="form-horizontal" >
             {{ csrf_field() }}
             <h1 class="title">
               Login
@@ -24,8 +24,8 @@
               </p>
               <hr>
               <p class="control">
-                <button class="button is-primary">Login</button>
-                <button class="button is-default">Cancel</button>
+                <button class="button is-primary" id="btn-login" >Login</button>
+
               </p>
             </div>
             <p class="has-text-centered">
@@ -35,10 +35,47 @@
               | 
               <a href="#">Need help?</a>
             </p>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </div> 
   </section> 
+@endsection
+
+@section('scripts')
+@parent
+<script>
+(function(){
+    const txtEmail = document.getElementById('email');
+    const txtPassword = document.getElementById('password') ; 
+
+    const btnLogin = document.getElementById('btn-login') ;
+
+    btnLogin.addEventListener('click', function(e){
+        const email = txtEmail.value ; 
+        const password = txtPassword.value ; 
+        console.log(email) ; 
+
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+            
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode) ; 
+            console.log(errorMessage) ; 
+            
+        });
+
+    });
+
+    firebase.auth().onAuthStateChanged(firebaseUser=> {
+      if(firebaseUser) {
+        console.log(firebaseUser) ;
+      }else {
+        console.log('not logged in') ; 
+      }
+    }) ;
+
+}());
+</script>
 @endsection
