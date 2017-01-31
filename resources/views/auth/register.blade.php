@@ -73,6 +73,9 @@
         promise.then( user => {
             console.log(user) ;
             user.sendEmailVerification();
+            firebase.database().ref('users/'+ user.uid).set({
+                username : txtUsername.value 
+            });
         }).catch(e => {
             console.log(e.message) ; 
         })
