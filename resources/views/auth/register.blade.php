@@ -10,36 +10,40 @@
                         Register an Account
                     </h1>
 
-                    <div class="box">
-
-                    <div class="form-horizontal" >
-                        {{ csrf_field() }}
-
-                        <label class="label">Username</label>
-                        <p class="control">
-                            <input class="input" id="username" name="name" type="text"  required>
-                        </p> 
-
-                        <label class="label">Email</label>
-                        <p class="control">
-                            <input class="input" id="email" name="email" type="text"  required>
-                        </p> 
-
-                        <label class="label">Password</label>
-                        <p class="control">
-                            <input id="password" type="password" class="input" name="password" required>
-                        </p>
-
-                        <label class="label">Confirm Password</label>
-                        <p class="control">
-                            <input id="password-confirm" type="password" class="input" name="password_confirmation" required>
-                        </p> 
-                        <hr/>
-                        <p class="control">
-                            <button class="button is-primary" id="btn-register" >Register</button>
-                            <button class="button is-default">Cancel</button>
-                        </p>
+                    <div id="alert-area" class="notification is-danger " style="display:none;">
+                        <button class="delete"></button>
+                        <p></p>
                     </div>
+
+                    <div class="box">
+                        <div class="form-horizontal" >
+                            {{ csrf_field() }}
+
+                            <label class="label">Username</label>
+                            <p class="control">
+                                <input class="input" id="username" name="name" type="text"  required>
+                            </p> 
+
+                            <label class="label">Email</label>
+                            <p class="control">
+                                <input class="input" id="email" name="email" type="text"  required>
+                            </p> 
+
+                            <label class="label">Password</label>
+                            <p class="control">
+                                <input id="password" type="password" class="input" name="password" required>
+                            </p>
+
+                            <label class="label">Confirm Password</label>
+                            <p class="control">
+                                <input id="password-confirm" type="password" class="input" name="password_confirmation" required>
+                            </p> 
+                            <hr/>
+                            <p class="control">
+                                <button class="button is-primary" id="btn-register" >Register</button>
+                                <button class="button is-default">Cancel</button>
+                            </p>
+                        </div>
                     </div>
                     <p class="has-text-centered">
                         <a href="/login">Login</a>
@@ -71,7 +75,6 @@
         const promise = firebase.auth().createUserWithEmailAndPassword(email,password) ; 
 
         promise.then( user => {
-            console.log(user) ;
             user.sendEmailVerification();
             firebase.database().ref('users/'+ user.uid).set({
                 username : txtUsername.value 
