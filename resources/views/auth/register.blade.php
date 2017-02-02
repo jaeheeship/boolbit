@@ -80,6 +80,9 @@
                 username : txtUsername.value 
             });
         }).catch(e => {
+            let $alertArea = document.getElementById('alert-area') ;
+            $alertArea.style.display = 'block' ;
+            $alertArea.querySelector('p').innerHTML = e.message;
             console.log(e.message) ; 
         })
 
