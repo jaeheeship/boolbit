@@ -41,7 +41,7 @@
                             <hr/>
                             <p class="control">
                                 <button class="button is-primary" id="btn-register" >Register</button>
-                                <button class="button is-default">Cancel</button>
+                                
                             </p>
                         </div>
                     </div>
