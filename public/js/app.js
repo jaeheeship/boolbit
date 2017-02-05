@@ -1987,6 +1987,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {
         console.log('Component mounted.');
+    },
+
+    methods: {
+        register: function register() {
+            alert("test");
+        }
     }
 };
 
@@ -19852,15 +19858,31 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "box"
   }, [_c('div', {
     staticClass: "form-horizontal"
   }, [_c('label', {
     staticClass: "label"
-  }, [_vm._v("Username")]), _vm._v(" "), _c('p', {
+  }, [_vm._v("Username")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('label', {
+    staticClass: "label"
+  }, [_vm._v("Email")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('label', {
+    staticClass: "label"
+  }, [_vm._v("Password")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('label', {
+    staticClass: "label"
+  }, [_vm._v("Confirm Password")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('button', {
+    staticClass: "button is-primary",
+    attrs: {
+      "id": "btn-register"
+    },
+    on: {
+      "click": _vm.register
+    }
+  }, [_vm._v("Register")])])])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', {
     staticClass: "control"
   }, [_c('input', {
     staticClass: "input",
@@ -19870,9 +19892,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "text",
       "required": ""
     }
-  })]), _vm._v(" "), _c('label', {
-    staticClass: "label"
-  }, [_vm._v("Email")]), _vm._v(" "), _c('p', {
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', {
     staticClass: "control"
   }, [_c('input', {
     staticClass: "input",
@@ -19882,9 +19904,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "text",
       "required": ""
     }
-  })]), _vm._v(" "), _c('label', {
-    staticClass: "label"
-  }, [_vm._v("Password")]), _vm._v(" "), _c('p', {
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', {
     staticClass: "control"
   }, [_c('input', {
     staticClass: "input",
@@ -19894,9 +19916,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "password",
       "required": ""
     }
-  })]), _vm._v(" "), _c('label', {
-    staticClass: "label"
-  }, [_vm._v("Confirm Password")]), _vm._v(" "), _c('p', {
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', {
     staticClass: "control"
   }, [_c('input', {
     staticClass: "input",
@@ -19906,14 +19928,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "name": "password_confirmation",
       "required": ""
     }
-  })]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
-    staticClass: "control"
-  }, [_c('button', {
-    staticClass: "button is-primary",
-    attrs: {
-      "id": "btn-register"
-    }
-  }, [_vm._v("Register")])])])])
+  })])
 }]}
 module.exports.render._withStripped = true
 if (false) {
