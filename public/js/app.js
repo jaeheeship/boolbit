@@ -1988,6 +1988,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     mounted: function mounted() {
         console.log('Component mounted.');
     },
+    data: function data() {
+        return {
+            username: '',
+            email: '',
+            password: '',
+            password_confirm: ''
+        };
+    },
 
     methods: {
         register: function register() {
@@ -19864,13 +19872,113 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "form-horizontal"
   }, [_c('label', {
     staticClass: "label"
-  }, [_vm._v("Username")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('label', {
+  }, [_vm._v("Username")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.username),
+      expression: "username"
+    }],
+    staticClass: "input",
+    attrs: {
+      "id": "username",
+      "name": "name",
+      "type": "text",
+      "required": ""
+    },
+    domProps: {
+      "value": _vm._s(_vm.username)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.username = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('label', {
     staticClass: "label"
-  }, [_vm._v("Email")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('label', {
+  }, [_vm._v("Email")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.email),
+      expression: "email"
+    }],
+    staticClass: "input",
+    attrs: {
+      "id": "email",
+      "name": "email",
+      "type": "text",
+      "required": ""
+    },
+    domProps: {
+      "value": _vm._s(_vm.email)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.email = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('label', {
     staticClass: "label"
-  }, [_vm._v("Password")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('label', {
+  }, [_vm._v("Password")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.password),
+      expression: "password"
+    }],
+    staticClass: "input",
+    attrs: {
+      "id": "password",
+      "type": "password",
+      "name": "password",
+      "required": ""
+    },
+    domProps: {
+      "value": _vm._s(_vm.password)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.password = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('label', {
     staticClass: "label"
-  }, [_vm._v("Confirm Password")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
+  }, [_vm._v("Confirm Password")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.password_confirm),
+      expression: "password_confirm"
+    }],
+    staticClass: "input",
+    attrs: {
+      "id": "password-confirm",
+      "type": "password",
+      "name": "password_confirmation",
+      "required": ""
+    },
+    domProps: {
+      "value": _vm._s(_vm.password_confirm)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.password_confirm = $event.target.value
+      }
+    }
+  })]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
     staticClass: "control"
   }, [_c('button', {
     staticClass: "button is-primary",
@@ -19881,55 +19989,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "click": _vm.register
     }
   }, [_vm._v("Register")])])])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('p', {
-    staticClass: "control"
-  }, [_c('input', {
-    staticClass: "input",
-    attrs: {
-      "id": "username",
-      "name": "name",
-      "type": "text",
-      "required": ""
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('p', {
-    staticClass: "control"
-  }, [_c('input', {
-    staticClass: "input",
-    attrs: {
-      "id": "email",
-      "name": "email",
-      "type": "text",
-      "required": ""
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('p', {
-    staticClass: "control"
-  }, [_c('input', {
-    staticClass: "input",
-    attrs: {
-      "id": "password",
-      "type": "password",
-      "name": "password",
-      "required": ""
-    }
-  })])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('p', {
-    staticClass: "control"
-  }, [_c('input', {
-    staticClass: "input",
-    attrs: {
-      "id": "password-confirm",
-      "type": "password",
-      "name": "password_confirmation",
-      "required": ""
-    }
-  })])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
