@@ -41,6 +41,7 @@
 
     const btnRegister = document.getElementById('btn-register') ;
 
+    /*
     btnRegister.addEventListener('click', function(e){
         const email = txtEmail.value ; 
         const password = txtPassword.value ; 
@@ -60,6 +61,7 @@
         })
 
     });
+    */
 
 }());
 </script>

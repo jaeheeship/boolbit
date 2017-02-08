@@ -1984,6 +1984,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {
         console.log('Component mounted.');
@@ -1997,9 +1998,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
+    computed: {},
     methods: {
         register: function register() {
-            alert("test");
+            var email = this.email;
+            var password = this.password;
+            var username = this.username;
+
+            var promise = FirebaseApp.auth().createUserWithEmailAndPassword(email, password);
+
+            promise.then(function (user) {
+                user.sendEmailVerification();
+                FirebaseApp.database().ref('users/' + user.uid).set({
+                    username: username
+                });
+            }).catch(function (e) {
+                /*
+                let $alertArea = document.getElementById('alert-area') ;
+                $alertArea.style.display = 'block' ;
+                $alertArea.querySelector('p').innerHTML = e.message;*/
+                console.log(e.message);
+            });
         }
     }
 };
@@ -2030,6 +2049,15 @@ window._ = __webpack_require__(39);
 window.Vue = __webpack_require__(44);
 window.VueFire = __webpack_require__(45);
 window.Firebase = __webpack_require__(36);
+window.FirebaseApp = window.Firebase.initializeApp({
+
+  apiKey: "AIzaSyCxp6vA7eTLr-OJbBsc1Bs5OaCOz995Ppk",
+  authDomain: "boolbit-81a75.firebaseapp.com",
+  databaseURL: "https://boolbit-81a75.firebaseio.com",
+  storageBucket: "boolbit-81a75.appspot.com",
+  messagingSenderId: "256589869214"
+
+});
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

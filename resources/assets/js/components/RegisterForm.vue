@@ -31,6 +31,8 @@
 </template>
 
 <script>
+
+
     export default {
         mounted() {
             console.log('Component mounted.')
@@ -43,9 +45,30 @@
                 password_confirm : ''
             }
         },
+        computed : {
+
+        },
         methods: {
             register() {
-                alert("test") ;
+                const email = this.email ; 
+                const password = this.password ; 
+                const username = this.username ; 
+
+                const promise = FirebaseApp.auth().createUserWithEmailAndPassword(email,password) ; 
+
+                promise.then( user => {
+                    user.sendEmailVerification();
+                    FirebaseApp.database().ref('users/'+ user.uid).set({
+                        username : username 
+                    });
+                }).catch(e => {
+                    /*
+                    let $alertArea = document.getElementById('alert-area') ;
+                    $alertArea.style.display = 'block' ;
+                    $alertArea.querySelector('p').innerHTML = e.message;*/
+                    console.log(e.message) ; 
+                })
+                
             }
         }
     }
