@@ -35,7 +35,7 @@
 
     export default {
         mounted() {
-            console.log('Component mounted.')
+            
         },
         data() {
             return {
@@ -46,7 +46,10 @@
             }
         },
         computed : {
-
+            //todo
+            //validate email
+            //validate password
+            
         },
         methods: {
             register() {
