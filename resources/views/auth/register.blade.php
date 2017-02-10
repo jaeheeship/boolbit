@@ -33,36 +33,5 @@
 
 @section('scripts')
 @parent
-<script>
-(function(){
-    const txtEmail = document.getElementById('email');
-    const txtUsername = document.getElementById('username');
-    const txtPassword = document.getElementById('password') ; 
 
-    const btnRegister = document.getElementById('btn-register') ;
-
-    /*
-    btnRegister.addEventListener('click', function(e){
-        const email = txtEmail.value ; 
-        const password = txtPassword.value ; 
-
-        const promise = firebase.auth().createUserWithEmailAndPassword(email,password) ; 
-
-        promise.then( user => {
-            user.sendEmailVerification();
-            firebase.database().ref('users/'+ user.uid).set({
-                username : txtUsername.value 
-            });
-        }).catch(e => {
-            let $alertArea = document.getElementById('alert-area') ;
-            $alertArea.style.display = 'block' ;
-            $alertArea.querySelector('p').innerHTML = e.message;
-            console.log(e.message) ; 
-        })
-
-    });
-    */
-
-}());
-</script>
 @endsection
