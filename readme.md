@@ -24,6 +24,8 @@ We provide
 Our goal is to hard to reach it in short time.
 So, We'll take into small steps.
 
+
+
 ### How to use.
 * 
 
@@ -40,3 +42,6 @@ Then We'll listen to feedback from users and fix it and improve it.
 Of course, We know that we have to draw blueprint in order to develop product for a long time.  
 
 ### Application Architecture
+
+* For Auth
+	* Firebase
