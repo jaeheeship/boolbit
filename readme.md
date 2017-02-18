@@ -45,3 +45,4 @@ Of course, We know that we have to draw blueprint in order to develop product fo
 
 * For Auth
 	* Firebase
+		* Firebase is good solution to build auth system
