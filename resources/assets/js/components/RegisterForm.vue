@@ -48,6 +48,12 @@
         computed : {
             //todo
             //validate email
+		validateEmail() {
+			return true;
+		},
+		validatePassword() {
+			return true ;
+		}
             //validate password
             
         },
