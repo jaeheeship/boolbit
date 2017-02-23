@@ -52,7 +52,10 @@
 			return true;
 		},
 		validatePassword() {
-			return true ;
+			if(this.password.length >= 6 ) {
+				return true ;
+			}
+			return false ;
 		}
             //validate password
             
