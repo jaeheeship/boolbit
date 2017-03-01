@@ -42,7 +42,7 @@ Then We'll listen to feedback from users and fix it and improve it.
 Of course, We know that we have to draw blueprint in order to develop product for a long time.  
 
 ### Application Architecture
-
+Auth system will be seperated into auth project ( called boolbit.auth).
 * For Auth
 	* Firebase
 		* Firebase is good solution to build auth system
