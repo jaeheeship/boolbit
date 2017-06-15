@@ -13,3 +13,6 @@ I hope that many developer only focus on development not infrastructure.
 ### What we provide
 
 * Auth component based on firebase.
+* Cloud Function Management System.
+
+You can build web app easily with boolbit.
