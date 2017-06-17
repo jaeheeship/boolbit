@@ -16,3 +16,9 @@ I hope that many developer only focus on development not infrastructure.
 * Cloud Function Management System.
 
 You can build web app easily with boolbit.
+
+### Application Stack
+* vue
+* typescript
+* bulma.io
+* firebase
